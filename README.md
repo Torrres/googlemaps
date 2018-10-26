@@ -1,10 +1,10 @@
 # googlemaps
 
-> A Vue.js project
+> No olvidar instalar las dependencias previamente
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
@@ -18,4 +18,33 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+Se implemento la siguientes librerias.
+
+[https://github.com/xkjyeah/vue-google-maps](https://github.com/xkjyeah/vue-google-maps)
+
+Esta libreria nos permite generar el maps correspondiente. De igual forma nos proporciona un market por defecto.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+[https://github.com/eregnier/vue2-gmap-custom-marker](https://github.com/eregnier/vue2-gmap-custom-marker)
+
+Esta libreria, nos va a permitir perzonalizar el marker de google maps. \(Redimencionar correctamente, o que pasen la imagen correcta.\)
+
+Ambas librerias implementan un array de objetos, donde se proporciona latitud y longitud.
+
+```
+markers: [{
+    position: {
+    lat: 10.0,
+    lng: 10.0
+   }
+}, {
+    position: {
+     lat: 11.0,
+     lng: 11.0
+    }
+}]
+```
+
+Con que se obtenga el array de un Endpoint con eso debe quedar.
+
